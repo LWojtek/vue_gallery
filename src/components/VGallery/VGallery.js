@@ -30,12 +30,15 @@ export default {
                     thumbnail: res.data[i].media_details.sizes.thumbnail.source_url,
                     w: res.data[i].media_details.sizes.full.width,
                     h: res.data[i].media_details.sizes.full.height,
-                    alt: res.data[i].alt_text
+                    alt: res.data[i].alt_text,
+                    category: res.data[i].categories[0]
                 })
             }
         })
 
         this.items = items
+
+        console.log(this.items)
     },
 
     components: {
