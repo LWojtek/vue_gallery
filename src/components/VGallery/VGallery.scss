@@ -16,11 +16,17 @@ body {
 
 .gallery{
     display: flex;
+
+    @media screen and (max-width: 768px) {
+       flex-direction: column;
+    }
 }
 
 .filter {
    flex-basis: 25%;
    background: #999;
+   position: sticky;
+   top: 0;
 
    ul {
       position: sticky;
@@ -37,6 +43,7 @@ body {
          &:hover {
             background-color: rgba(255,255,255, .5);
          }
+
       }
 
   
