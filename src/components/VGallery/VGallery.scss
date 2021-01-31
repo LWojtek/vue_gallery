@@ -44,7 +44,7 @@ body {
          transition: .2s;
          margin-bottom: 5px;
          transform: translateX(-600px);
-         animation: slide-in .4s ease-in forwards;
+         animation: slide-in .3s ease-in forwards;
          z-index: 10;
          letter-spacing: 2px;
 
@@ -96,7 +96,7 @@ body {
 
 .gallery__images {
    flex-basis: 75%;
-   background: rgb(240, 238, 238);
+   // background: rgb(240, 238, 238);
 
 }
 
