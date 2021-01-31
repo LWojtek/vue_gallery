@@ -3,7 +3,9 @@ export default {
     data() {
         return {
             options: {
-                shareEl: false
+                shareEl: false,
+                showHideOpacity: true,
+                getThumbsBoundsFn: false
             },
              items: [
                 {
