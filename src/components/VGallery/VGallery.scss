@@ -1,4 +1,58 @@
 // Gallery styles
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
 .gallery{
-    
+    display: flex;
+}
+
+.filter {
+   flex-basis: 25%;
+   background: #999;
+
+   ul {
+      position: sticky;
+      top: 15px;
+      list-style-type: none;
+
+      li {
+         text-align: center;
+         padding: 10px 40px;
+         background: white;
+         cursor: pointer;
+
+         &:hover {
+            background-color: aqua;
+         }
+      }
+
+  
+   }
+}
+
+.gallery__images {
+   flex-basis: 75%;
+   background: rgb(240, 238, 238);
+
+}
+
+.my-gallery  {
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 10px 0;
+
 }
