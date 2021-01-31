@@ -32,14 +32,10 @@ export default {
                     h: res.data[i].media_details.sizes.full.height,
                     alt: res.data[i].alt_text
                 })
-                
             }
-                  
         })
 
         this.items = items
-                     
-
     },
 
     components: {
