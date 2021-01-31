@@ -4,16 +4,20 @@
     <!-- 25% -->
     <div class="filter"> 
       <ul>
-        <li>Wszystkie</li>
-        <li>Sala Weselna</li>
-        <li>Ogród</li>
-        <li>Menu</li>
+        <li @click="searchValue = ''">Wszystkie</li>
+        <li 
+        v-for="(category, name) in categories"
+        :key="name"
+        @click="updateSearch(name)"
+        >{{ category }}
+        </li>
+        
       </ul>
     </div>
 
     <!-- 75%, 3 images desktop/tablet, 1/2 mobile view -->
     <div class="gallery__images">
-      <VPictureSwipe :items="items" :options="options" />
+      <VPictureSwipe :items="filteredItems" :options="options" />
     </div>
 
   </div>
