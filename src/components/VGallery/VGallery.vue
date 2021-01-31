@@ -13,7 +13,7 @@
 
     <!-- 75%, 3 images desktop/tablet, 1/2 mobile view -->
     <div class="gallery__images">
-      <VPictureSwipe :items="items" :options="options" class="gallery__photo" />
+      <VPictureSwipe :items="items" :options="options" />
     </div>
 
   </div>
