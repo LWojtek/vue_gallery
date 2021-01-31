@@ -22,6 +22,7 @@
 
 <script src="./VGallery.js"></script>
 
+
 <style lang="scss">
   @import "./VGallery.scss";
 </style>

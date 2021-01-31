@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default {
-        name: 'VGallery',
+    name: 'VGallery',
     data() {
         return {
  
@@ -15,7 +15,7 @@ export default {
             ]
         };
     },
-    
+   
     created() {
         const API = 'http://iwona.cms.everse.pl/wp-json/wp/v2/media?parent=5&per_page=50'
         let items = []
@@ -35,10 +35,7 @@ export default {
                 })
             }
         })
-
         this.items = items
-
-        console.log(this.items)
     },
 
     components: {
