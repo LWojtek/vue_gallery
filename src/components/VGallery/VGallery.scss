@@ -32,14 +32,20 @@ body {
          padding: 10px 40px;
          background: white;
          cursor: pointer;
+         transition: .2s;
 
          &:hover {
-            background-color: aqua;
+            background-color: rgba(255,255,255, .5);
          }
       }
 
   
    }
+
+}
+
+.active {
+   border-bottom: 1px solid black;
 }
 
 .gallery__images {

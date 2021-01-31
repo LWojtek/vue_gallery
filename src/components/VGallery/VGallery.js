@@ -5,8 +5,7 @@ export default {
             options: {
                 shareEl: false
             },
-
-            items: [
+             items: [
                 {
                     src: 'https://picsum.photos/id/1/600/400',
                     thumbnail: 'https://picsum.photos/id/1/340/340',
