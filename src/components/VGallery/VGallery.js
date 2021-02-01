@@ -3,6 +3,7 @@ import axios from 'axios';
 export default {
     name: 'VGallery',
     data() {
+
         return {
             searchValue: '',
             options: {
@@ -11,7 +12,8 @@ export default {
                 getThumbsBoundsFn: false
             },
             items : [],
-            categories : {},            
+            categories : {},           
+
         };
     },
     methods: {
@@ -22,6 +24,7 @@ export default {
                 this.searchValue = name;
             }
         },
+
       },
     computed: {
         filteredItems(){
@@ -70,6 +73,7 @@ export default {
         })
         this.items = items
         this.categories = categoriesTmp
+        
     },
 
     components: {

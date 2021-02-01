@@ -17,9 +17,8 @@
 
     <!-- 75%, 3 images desktop/tablet, 1/2 mobile view -->
     <div class="gallery__images">
-      <VPictureSwipe :items="filteredItems" :options="options" />
+       <VPictureSwipe :items="filteredItems" :options="options" />
     </div>
-
   </div>
 </div>
 </template>
