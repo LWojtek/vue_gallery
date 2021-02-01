@@ -70,7 +70,6 @@ body {
          &:nth-child(4) {
             animation-delay: .9s;
          }
-
       }
 
       @keyframes slide-in {
@@ -82,10 +81,8 @@ body {
             transform: translateX(0px);
             opacity: 1;
          }
-      }
- 
+      } 
    }
-
 }
 .active {
    border-right: 20px solid red;
@@ -94,18 +91,15 @@ body {
 .gallery__images {
    flex-basis: 75%;
    // background: rgb(240, 238, 238);
-
 }
 
 .my-gallery  {
-
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    padding: 10px 0;
 
    img {
-
       transition: .3s;
 
       &:hover {
@@ -113,5 +107,4 @@ body {
         transform: scale(1.006)
       }
    }
-
 }

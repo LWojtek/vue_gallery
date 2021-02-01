@@ -65,7 +65,6 @@ export default {
                 for (let j = 0; j < categories.length; j++) {
                     const category = categories[j];
                     categoriesTmp[category.slug] = category.name;  
-
                 }
              }
         })
