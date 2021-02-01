@@ -21,8 +21,8 @@ export default {
             } else {
                 this.searchValue = name;
             }
-        }
-    },
+        },
+      },
     computed: {
         filteredItems(){
             if(this.searchValue !== '') {
@@ -32,7 +32,7 @@ export default {
                         if (category.slug === this.searchValue) {
                             return true;
                         }
-                    }
+                                         }
                     return false;                        
                 })
             }
@@ -64,7 +64,8 @@ export default {
 
                 for (let j = 0; j < categories.length; j++) {
                     const category = categories[j];
-                    categoriesTmp[category.slug] = category.name;          
+                    categoriesTmp[category.slug] = category.name;  
+
                 }
              }
         })

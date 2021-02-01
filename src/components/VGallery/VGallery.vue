@@ -8,8 +8,8 @@
         <li 
         v-for="(category, name) in categories"
         :key="name"
-        @click="updateSearch(name)"
-        >{{ category }}
+        @click="updateSearch(name)">
+        {{ category }}
         </li>
         
       </ul>
