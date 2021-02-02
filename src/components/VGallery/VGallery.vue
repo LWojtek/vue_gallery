@@ -4,11 +4,13 @@
     <!-- 25% -->
     <div class="filter"> 
       <ul>
-        <li @click="searchValue = ''">Wszystkie</li>
+        <li @click="searchValue = ''"
+        :class="{'active' : searchValue === ''}">Wszystkie</li>
         <li 
         v-for="(category, name) in categories"
         :key="name"
-        @click="updateSearch(name)">
+        @click="updateSearch(name)"
+         :class="{'active' : searchValue === name}">
         {{ category }}
         </li>
         
